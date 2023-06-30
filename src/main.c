@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-#include "lcg.h"
+#include "rng.h"
 
 int main(){
 
-  for (int i = 0; i < 10; i++){
-    printf("%d\n", rng_lcg());
+  rng_set_seed(0x1000);
+
+  for (int i = 0; i < 20; i++){
+    printf("0x%x\n", rng_lcg());
   }
   
   return 0;
