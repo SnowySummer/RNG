@@ -3,7 +3,7 @@ LIB  = librng.a
 LIB_HEADER = main_rng.h
 
 MAIN = main.c
-SRC = lcg.c
+SRC = lcg.c lfsr.c
 
 
 .PHONY: build run lib
