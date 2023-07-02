@@ -6,7 +6,7 @@ extern uint64_t seed;
 
 
 // LFSR parameters
-static uint64_t lfsr_poly = 0x80000000000019E2;
+static uint64_t lfsr_poly = 0xD800000000000000;
 
 static uint8_t rng_lfsr_bit(){
     uint8_t bit = seed & 1;
